@@ -1,19 +1,16 @@
 import React, { useState } from 'react'
 
-const DropDown = ({currencies,from,to}) => {
+const DropDown = ({currencies,from}) => {
 
 const newCurrencies = Object.keys(currencies)
 
 const [optionValue, setOptionValue] = useState("")
 
 const getOptionValue = (e) =>{
-  setOptionValue(e.target.value)
+  from(e.target.value)
 
 }
 
-from(optionValue)
-
-console.log(optionValue)
   return (
     <div>
     <select name='currencies' onChange={getOptionValue}>currencies

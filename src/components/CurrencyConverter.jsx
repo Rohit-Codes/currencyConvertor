@@ -57,7 +57,7 @@ fetchCurrencies()
       <div>
         <DropDown currencies={currencies} from={setFrom}/>
         <button>Swipe</button>
-        <DropDown currencies={currencies} to={setTo}/>
+        <DropDown currencies={currencies} from={setTo}/>
       </div>
       <hr/>
       <div className='inputDIv'>
